@@ -6,6 +6,9 @@ for($a=1; $a<=100; $a=$a+10) {
  }
  echo "<br>";
 }
+$prooo=1;
+$product_item=2;
+$product_quntity=4;
 
 
 
