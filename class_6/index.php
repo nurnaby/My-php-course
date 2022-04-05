@@ -10,6 +10,7 @@ $foods =array(
 // for ($i=0; $i<$len; $i++) {
 //     echo $food[$i];
 // }
+// array count fonction 
 
 foreach($foods as $id=> $v1){
     echo $id ." ";
