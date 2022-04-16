@@ -14,9 +14,41 @@ echo "this day ful format".date('j/M/Y')."<br>";
 echo "this day ful format".date('jS/M/Y')."<br>";
 
 
-echo date('z')."<br>";
-echo date('L');
-echo date('w');
+// echo date('z')."<br>";// show day of year
+// echo date('L');// show lep year
+// echo date('w');// show week of year
+
+// date_create () function
+
+
+$date = date_create("12-11-2022 12:23:29");
+
+echo date_format($date,"j/M/Y H:m:s")."<br>";
+
+
+ 
+
+// get function 
+// $date = mktime(0,0,0,02,15,2015);
+// echo "<pre>";
+// print_r(getdate($date));
+// echo "</pre>";
+
+
+// echo "<pre>";
+// print_r(gettimeofday());
+// echo "</pre>";
+$date = mktime(0,0,0,02,15,2015);
+echo "<pre>";
+print_r(localtime($date,true));
+echo "</pre>";
+
+
+
+
+
+
+
 
 
 
