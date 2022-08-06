@@ -31,3 +31,44 @@ PHP is a widely used server-side programming language that’s become increasing
 - [] text1
 </details>
 
+## Class 13(oop interfaces) Overview
+<details>
+<summary>Click Here </summary>
+
+### Interfaces
+- can't make object of interface 
+
+
+
+`php `
+```php
+interface frist{
+    function  cale($a,$b);
+
+    
+}
+interface second{
+    function sub($c,$d);//con't create object in funciton/ method
+}
+
+
+class child implements  frist,second{
+    public function cale($a,$b){
+        echo $a+$b;
+    }
+
+    public function sub($c,$d){
+        echo $c-$d;
+    }
+   
+  }
+
+  $test = new child();
+  $test->cale(10,30);
+
+       
+
+```
+
+</details>
+
