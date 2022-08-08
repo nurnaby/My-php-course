@@ -1,6 +1,6 @@
 <?php
 // $dbcon = mysqli_connect("localhost","root","","crud") or dir("connection failed");
-
+// interface start 
 interface frist{
     function  cale($a,$b);
 
@@ -24,6 +24,12 @@ class child implements  frist,second{
 
   $test = new child();
   $test->cale(10,30);
+
+
+//   interface end 
+
+
+
 
 
 
