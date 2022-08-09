@@ -107,3 +107,25 @@ echo $text2->sum();
 ```
 </details>
 
+## Class 15(abstract class) Overview
+<details>
+<summary>Click Here </summary>
+
+### Abstract Class
+- abstract class con't create object
+
+
+`php `
+```php
+class childClass extends parentClass{
+    public function cale($a,$b){
+        $c = $a+$b;
+        echo $c;
+    }
+}
+$test = new childClass();
+$test->cale(10,10);
+
+```
+</details>
+
