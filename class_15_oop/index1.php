@@ -15,12 +15,4 @@ class childClass extends parentClass{
 $test= new childClass();
 $test->cale(10,10);
 
-
-
-
-
-
-
-
-
 ?>
