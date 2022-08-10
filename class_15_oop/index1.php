@@ -1,4 +1,9 @@
 <?php
+//abstract class & methods declear by using abstract key word
+// abstract class must be declear in derived classes
+// abstract method must accessible from derived class (using public modifiar)
+// cannot create any object in abstract class
+
  abstract class parentClass{
     public $name;
     // method declaretion 
@@ -12,7 +17,7 @@ class childClass extends parentClass{
         echo $c;
     }
 }
-$test= new childClass();
-$test->cale(10,10);
+// $test= new childClass();
+// $test->cale(10,10);
 
 ?>

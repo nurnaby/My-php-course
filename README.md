@@ -113,6 +113,9 @@ echo $text2->sum();
 
 ### Abstract Class
 - abstract class con't create object
+- abstract class must be declear in derived classes
+- abstract class & methods declear by using abstract key word
+- abstract method must accessible from derived class (using public modifiar)
 
 
 `php `
@@ -125,6 +128,23 @@ class childClass extends parentClass{
 }
 $test = new childClass();
 $test->cale(10,10);
+
+```
+</details>
+
+## Class 16(polymorfhisom,static key word) Overview
+<details>
+<summary>Click Here </summary>
+
+### polymorphisom
+### static key word
+### Ab
+
+
+
+`php `
+```php
+
 
 ```
 </details>

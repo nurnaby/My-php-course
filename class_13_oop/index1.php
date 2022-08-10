@@ -1,6 +1,7 @@
 <?php
 // $dbcon = mysqli_connect("localhost","root","","crud") or dir("connection failed");
 // interface start 
+// cannot create any properties decler in interface
 interface frist{
     function  cale($a,$b);
 
