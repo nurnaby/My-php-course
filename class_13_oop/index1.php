@@ -23,7 +23,7 @@ class child implements  frist,second{
    
   }
 
-  $test = new child();
+  $test = new child(10,22);
   $test->cale(10,30);
 
 
