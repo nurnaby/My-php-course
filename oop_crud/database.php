@@ -40,29 +40,44 @@ class ComonCrudControler{
         return false;
        }
        
-       
-        // echo "'".$fileData."'";
-
-        // die();
-        // echo "<pre>";
-            
-        // echo "</pre>";
-        // die();
-        // echo "<pre>";
-        // print_r($pram);
-        // echo "</pre>";
-        
-        // die();
     }
     public function resultDispaly(){
         $val = $this->result;
         $this->result= array();
         return $val;
     }
-    public function update(){
+    public function update($table_name,$pram= array(),$pk_id){
+        $fildValus = [];
+        foreach($pram as $key=> $val){
+            $fildValus []= "$key ='$val'";
+            
+            
+        }
+        $fild_Valus = implode(",",$fildValus);
 
+        $sql ="UPDATE $table_name SET $fild_Valus WHERE id=$pk_id";
+        if ($this->mysqli->query($sql)) {
+            array_push($this->result,'update suceesfully');
+            return true;
+       } else {
+        array_push($this->result,$this->mysqli->error);
+        return false;
+       }
+
+
+        
     }
-    public function delete(){
+    public function delete($table_name,$pk_id){
+        
+        // $sql ="DELET $table_name SET $fild_Valus WHERE id=$pk_id";
+        $sql = "DELETE FROM $table_name WHERE id =$pk_id";
+        if ($this->mysqli->query($sql)) {
+            array_push($this->result,'Delete suceesfully');
+            return true;
+       } else {
+        array_push($this->result,$this->mysqli->error);
+        return false;
+       }
 
     }
     public function __destruct()
