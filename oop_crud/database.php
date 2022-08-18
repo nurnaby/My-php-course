@@ -33,9 +33,10 @@ class ComonCrudControler{
         $sql ="INSERT INTO $table_name($table_column) VALUES ('$fileData')";
       
        if ($this->mysqli->query($sql)) {
-            echo "inserat suceesfully";
+            array_push($this->result,'inserat suceesfully');
             return true;
        } else {
+        array_push($this->result,$this->mysqli->error);
         return false;
        }
        
@@ -52,6 +53,11 @@ class ComonCrudControler{
         // echo "</pre>";
         
         // die();
+    }
+    public function resultDispaly(){
+        $val = $this->result;
+        $this->result= array();
+        return $val;
     }
     public function update(){
 
